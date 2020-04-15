@@ -26,5 +26,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         date > date
+        git config user.email "plord@tibco.com"
+        git config user.name "Peter Lord"
         git commit -m "Test update from github actions" date
         git push
